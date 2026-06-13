@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "date": "2026-06-11",
+    "stage": "group",
+    "group": "A",
+    "home": "Mexico",
+    "away": "South Africa",
+    "homeGoals": 2,
+    "awayGoals": 0
+  },
+  {
+    "id": "2",
+    "date": "2026-06-11",
+    "stage": "group",
+    "group": "A",
+    "home": "Korea Republic",
+    "away": "Czechia",
+    "homeGoals": 2,
+    "awayGoals": 1
+  },
+  {
+    "id": "7",
+    "date": "2026-06-12",
+    "stage": "group",
+    "group": "B",
+    "home": "Canada",
+    "away": "Bosnia and Herzegovina",
+    "homeGoals": 1,
+    "awayGoals": 1
+  }
+]

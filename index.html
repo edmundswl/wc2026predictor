@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>World Cup 2026 Predictor</title>
+    <meta name="description" content="A World Cup 2026 predictor using Elo ratings, team style adjustments, Poisson scorelines, market blending, and Monte Carlo tournament simulations.">
+    <script>
+      try {
+        if (localStorage.getItem("wc26-theme") === "light") {
+          document.documentElement.classList.add("light");
+        }
+      } catch (error) {}
+    </script>
+    <link rel="stylesheet" href="./styles.css?v=2">
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="./app.js?v=2"></script>
+  </body>
+</html>
