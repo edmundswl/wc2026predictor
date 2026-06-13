@@ -19,3 +19,12 @@ node scripts/update-results.mjs
 ```
 
 The updater reads the public ESPN FIFA World Cup scoreboard, matches completed games to `data/schedule.json`, and writes `data/results.json`. Once a match appears in `data/results.json`, the app treats it as played and removes it from upcoming prediction/watchlist sections.
+
+## GitHub Actions automation
+
+The `.github/workflows/update-data.yml` workflow runs these updates on GitHub's servers:
+
+- played results every hour at 15 minutes past the hour
+- Singapore Pools public listings daily at 08:00 Singapore time
+
+It commits changed JSON files back to `main`, so GitHub Pages redeploys without your Mac staying on.
