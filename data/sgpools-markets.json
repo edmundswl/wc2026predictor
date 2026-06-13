@@ -1,0 +1,65 @@
+{
+  "generatedAt": null,
+  "sourceUrl": "https://online.singaporepools.com/en/sports",
+  "status": "not_connected",
+  "note": "No live Singapore Pools market snapshot is bundled yet. The public sports page exposes football bet-type labels, while live event prices are loaded by Singapore Pools' app runtime.",
+  "betTypes": [
+    {
+      "code": "MR",
+      "name": "1X2"
+    },
+    {
+      "code": "CS",
+      "name": "Pick the Score"
+    },
+    {
+      "code": "HL",
+      "name": "Total Goals Over/Under"
+    },
+    {
+      "code": "BG",
+      "name": "Will Both Teams Score"
+    },
+    {
+      "code": "EG",
+      "name": "Total Goals"
+    },
+    {
+      "code": "OE",
+      "name": "Total Goals Odd/Even"
+    },
+    {
+      "code": "AH",
+      "name": "Asian Handicap / HT Asian Handicap"
+    },
+    {
+      "code": "MH",
+      "name": "Handicap 1X2"
+    },
+    {
+      "code": "H1",
+      "name": "Halftime 1X2"
+    },
+    {
+      "code": "HF",
+      "name": "Halftime-Fulltime"
+    },
+    {
+      "code": "WH",
+      "name": "1/2 Goal"
+    },
+    {
+      "code": "NGN",
+      "name": "Team to Score 1st Goal"
+    },
+    {
+      "code": "FS",
+      "name": "1st Goal Scorer"
+    },
+    {
+      "code": "LS",
+      "name": "Last Goal Scorer"
+    }
+  ],
+  "events": []
+}

@@ -9,6 +9,7 @@ const TABS = [
   ["ratings", "Ratings"],
   ["results", "Results"],
   ["accuracy", "Accuracy"],
+  ["sgpools", "SG Pools"],
   ["method", "Method"],
 ];
 
@@ -24,6 +25,23 @@ const STAGE_LABELS = {
 
 const GROUPS = "ABCDEFGHIJKL".split("");
 const MAX_GOALS = 8;
+const SG_POOLS_BET_TYPES = [
+  ["MR", "1X2"],
+  ["CS", "Pick the Score"],
+  ["HL", "Total Goals Over/Under"],
+  ["BG", "Will Both Teams Score"],
+  ["EG", "Total Goals"],
+  ["OE", "Total Goals Odd/Even"],
+  ["AH", "Asian Handicap / HT Asian Handicap"],
+  ["MH", "Handicap 1X2"],
+  ["H1", "Halftime 1X2"],
+  ["HF", "Halftime-Fulltime"],
+  ["WH", "1/2 Goal"],
+  ["NGN", "Team to Score 1st Goal"],
+  ["FS", "1st Goal Scorer"],
+  ["LS", "Last Goal Scorer"],
+];
+
 const DEFAULT_CONFIG = {
   runs: 12000,
   seed: 20260613,
@@ -59,7 +77,7 @@ const app = document.querySelector("#app");
 init();
 
 async function init() {
-  const [schedule, results, scorers, history, odds, pretournament, model] = await Promise.all([
+  const [schedule, results, scorers, history, odds, pretournament, model, singaporePools] = await Promise.all([
     loadJSON("schedule.json"),
     loadJSON("results.json"),
     loadJSON("scorers.json"),
@@ -67,6 +85,7 @@ async function init() {
     loadJSON("odds.json"),
     loadJSON("pretournament.json"),
     loadJSON("team-model.json"),
+    safeLoadJSON("sgpools-markets.json", defaultSingaporePoolsFeed()),
   ]);
 
   const teams = model.Hp.map((team) => ({
@@ -83,6 +102,7 @@ async function init() {
     history,
     odds,
     pretournament,
+    singaporePools,
     teams,
     teamByName: Object.fromEntries(teams.map((team) => [team.name, team])),
     groups: groupTeams(teams),
@@ -105,6 +125,25 @@ async function loadJSON(file) {
   const response = await fetch(`${DATA_PATH}${file}`, { cache: "no-cache" });
   if (!response.ok) throw new Error(`Could not load ${file}`);
   return response.json();
+}
+
+async function safeLoadJSON(file, fallback) {
+  try {
+    return await loadJSON(file);
+  } catch (error) {
+    return fallback;
+  }
+}
+
+function defaultSingaporePoolsFeed() {
+  return {
+    generatedAt: null,
+    sourceUrl: "https://online.singaporepools.com/en/sports",
+    status: "not_connected",
+    note: "No live Singapore Pools market snapshot has been generated yet. The public sports page exposes football bet-type labels, while live event prices are loaded by Singapore Pools' app runtime.",
+    betTypes: SG_POOLS_BET_TYPES.map(([code, name]) => ({ code, name })),
+    events: [],
+  };
 }
 
 function validTab(tab) {
@@ -855,6 +894,7 @@ function renderTab(tab, ratings, sim, projection) {
   if (tab === "ratings") return renderRatings(ratings);
   if (tab === "results") return renderResults();
   if (tab === "accuracy") return renderAccuracy();
+  if (tab === "sgpools") return renderSingaporePools(ratings);
   return renderMethod(ratings, sim);
 }
 
@@ -1443,6 +1483,284 @@ function renderAccuracy() {
       <p class="muted">A naive three-way coin flip has log-loss about 1.10 and Brier about 0.67. The current model is ${scores.logLoss < 1.1 ? "ahead of" : "behind"} that baseline.</p>
     </section>
   `;
+}
+
+function renderSingaporePools(ratings) {
+  const feed = state.data.singaporePools || defaultSingaporePoolsFeed();
+  const events = singaporePoolsWorldCupEvents(feed);
+  const upcoming = singaporePoolsWatchlist(ratings, events);
+  const sourceState = events.length ? `${events.length} World Cup event${events.length === 1 ? "" : "s"} in snapshot` : "No live World Cup snapshot";
+  return `
+    <section class="panel pad">
+      <div class="section-head">
+        <div>
+          <div class="label">Singapore Pools</div>
+          <h2>World Cup market watch</h2>
+        </div>
+        <p>Informational price comparison only. It does not place bets, size stakes, or tell you to gamble. Singapore Pools says its games are for safer play, under-18 betting is not allowed, and account betting is only for people above 21.</p>
+      </div>
+      <div class="grid four">
+        ${metric("Source", "SG Pools", sourceState, "accent-green")}
+        ${metric("Snapshot", feed.generatedAt ? formatSnapshotTime(feed.generatedAt) : "Not connected", "read from data/sgpools-markets.json", "accent-cyan")}
+        ${metric("Markets known", SG_POOLS_BET_TYPES.length, "football bet-type catalogue", "accent-amber")}
+        ${metric("Mode", "Watchlist", "model fair prices vs listed prices", "accent-violet")}
+      </div>
+      <p class="muted" style="margin-top:12px;line-height:1.5">
+        Direct browser scraping from GitHub Pages is unreliable because the live sports odds are loaded through Singapore Pools' app runtime under MobileFirst endpoints. This tab reads a normalized local JSON snapshot when you provide one, and otherwise prepares the exact World Cup matches and markets to compare.
+      </p>
+      <div class="team-meta" style="margin-top:12px">
+        <a class="pill" href="https://online.singaporepools.com/en/sports" target="_blank" rel="noreferrer noopener">Open Singapore Pools sports</a>
+        <a class="pill" href="https://online.singaporepools.com/en/sports/football-bet-types" target="_blank" rel="noreferrer noopener">Football bet types</a>
+      </div>
+    </section>
+    <div class="grid two" style="margin-top:14px">
+      <section class="panel pad">
+        <div class="section-head">
+          <div>
+            <div class="label">Available at snapshot</div>
+            <h2>${events.length ? "World Cup events found" : "Waiting for market feed"}</h2>
+          </div>
+        </div>
+        ${events.length ? renderSingaporePoolsEvents(events, ratings) : renderSingaporePoolsEmpty(feed)}
+      </section>
+      <section class="panel pad">
+        <div class="section-head">
+          <div>
+            <div class="label">Market catalogue</div>
+            <h2>Singapore football bet types</h2>
+          </div>
+        </div>
+        <div class="team-meta">
+          ${SG_POOLS_BET_TYPES.map(([code, name]) => `<span class="tag">${code} · ${name}</span>`).join("")}
+        </div>
+        <p class="muted" style="margin-top:12px;line-height:1.5">The model can directly price 1X2, Over/Under 2.5, Both Teams Score, and Pick the Score. Other markets are displayed as available when present, but not scored unless we add a dedicated probability model for them.</p>
+      </section>
+    </div>
+    <section class="panel pad" style="margin-top:14px">
+      <div class="section-head">
+        <div>
+          <div class="label">Upcoming World Cup watchlist</div>
+          <h2>Model fair prices for comparable markets</h2>
+        </div>
+        <p>Fair odds are 1 divided by model probability. A positive price gap simply means the listed decimal odds are above this model's fair price; it is not a recommendation.</p>
+      </div>
+      <div class="list">
+        ${upcoming.map((item) => renderSingaporePoolsWatchCard(item)).join("")}
+      </div>
+    </section>
+  `;
+}
+
+function singaporePoolsWorldCupEvents(feed) {
+  const events = Array.isArray(feed.events) ? feed.events : [];
+  return events.filter((event) => {
+    const text = `${event.competition || ""} ${event.league || ""} ${event.tournament || ""} ${event.home || ""} ${event.away || ""}`.toLowerCase();
+    return text.includes("world cup") || text.includes("w cup") || text.includes("wcup") || matchByTeams(event.home, event.away);
+  });
+}
+
+function singaporePoolsWatchlist(ratings, sgEvents) {
+  const played = new Set(state.data.results.map((result) => result.id));
+  return state.data.schedule
+    .filter((match) => match.stage === "group" && !played.has(match.id) && !match.homeTbd && !match.awayTbd)
+    .slice(0, 12)
+    .map((match) => {
+      const prediction = matchPrediction(match.home, match.away, ratings);
+      const event = sgEvents.find((candidate) => matchByTeams(candidate.home, candidate.away, match.home, match.away));
+      return {
+        match,
+        prediction,
+        event,
+        comparisons: event ? compareSingaporePoolsMarkets(event, prediction, match) : modelComparableMarkets(prediction, match),
+      };
+    });
+}
+
+function renderSingaporePoolsEvents(events, ratings) {
+  return `
+    <div class="list">
+      ${events.map((event) => {
+        const match = findFixtureByTeams(event.home, event.away);
+        const prediction = match ? matchPrediction(match.home, match.away, ratings) : null;
+        const markets = Array.isArray(event.markets) ? event.markets : [];
+        return `
+          <div class="panel flat pad">
+            <div class="section-head">
+              <div>
+                <h3>${escapeHtml(event.home || "TBD")} vs ${escapeHtml(event.away || "TBD")}</h3>
+                <span class="muted">${event.kickoff ? escapeHtml(formatSnapshotTime(event.kickoff)) : "Kickoff TBC"} · ${escapeHtml(event.competition || event.tournament || "Football")}</span>
+              </div>
+              <span class="tag">${escapeHtml(event.status || "available")}</span>
+            </div>
+            <div class="team-meta">${markets.map((market) => `<span class="tag">${escapeHtml(market.code || "")} ${escapeHtml(market.name || "Market")}</span>`).join("") || `<span class="tag">No market list supplied</span>`}</div>
+            ${prediction ? renderMarketComparisonTable(compareSingaporePoolsMarkets(event, prediction, match)) : `<p class="muted" style="margin-top:10px">Could not match this event to the World Cup schedule, so model prices are not shown.</p>`}
+          </div>
+        `;
+      }).join("")}
+    </div>
+  `;
+}
+
+function renderSingaporePoolsEmpty(feed) {
+  return `
+    <div class="empty" style="text-align:left">
+      <strong>No Singapore Pools World Cup event snapshot is bundled yet.</strong>
+      <p style="margin-top:8px">Expected optional feed: <code>data/sgpools-markets.json</code> with events, markets, selections, decimal odds, and availability flags.</p>
+      <p style="margin-top:8px">${escapeHtml(feed.note || "Live prices were not available from the static page.")}</p>
+    </div>
+  `;
+}
+
+function renderSingaporePoolsWatchCard(item) {
+  const home = state.data.teamByName[item.match.home];
+  const away = state.data.teamByName[item.match.away];
+  return `
+    <div class="panel flat pad">
+      <div class="section-head">
+        <div>
+          <h3>${home.flag} ${home.name} vs ${away.flag} ${away.name}</h3>
+          <span class="muted">${localFixtureTime(item.match)} · ${item.match.venue}</span>
+        </div>
+        <span class="tag">${item.event ? "SG snapshot matched" : "No listed SG price"}</span>
+      </div>
+      ${renderMarketComparisonTable(item.comparisons)}
+    </div>
+  `;
+}
+
+function renderMarketComparisonTable(comparisons) {
+  return `
+    <div class="matrix-wrap" style="margin-top:10px">
+      <table>
+        <thead>
+          <tr><th>Market</th><th>Selection</th><th class="num">Model</th><th class="num">Fair odds</th><th class="num">Listed</th><th class="num">Gap</th><th>Status</th></tr>
+        </thead>
+        <tbody>
+          ${comparisons.map((row) => `
+            <tr>
+              <td>${row.market}</td>
+              <td>${row.selection}</td>
+              <td class="num">${row.probability != null ? pct(row.probability, 1) : "--"}</td>
+              <td class="num">${row.fairOdds ? row.fairOdds.toFixed(2) : "--"}</td>
+              <td class="num">${row.listedOdds ? row.listedOdds.toFixed(2) : "--"}</td>
+              <td class="num ${row.edge > 0 ? "accent-green" : row.edge < 0 ? "accent-rose" : "faint"}">${row.edge != null ? pct(row.edge, 1) : "--"}</td>
+              <td>${row.available ? "Available" : row.listedOdds ? "Suspended" : "Watch"}</td>
+            </tr>
+          `).join("")}
+        </tbody>
+      </table>
+    </div>
+  `;
+}
+
+function modelComparableMarkets(prediction, match) {
+  const home = state.data.teamByName[match.home];
+  const away = state.data.teamByName[match.away];
+  const rows = [
+    marketRow("1X2", home.name, prediction.pHome),
+    marketRow("1X2", "Draw", prediction.pDraw),
+    marketRow("1X2", away.name, prediction.pAway),
+    marketRow("Over/Under 2.5", "Over 2.5", prediction.over25),
+    marketRow("Over/Under 2.5", "Under 2.5", 1 - prediction.over25),
+    marketRow("Both Teams Score", "Yes", prediction.btts),
+    marketRow("Both Teams Score", "No", 1 - prediction.btts),
+  ];
+  prediction.topScorelines.slice(0, 3).forEach((score) => {
+    rows.push(marketRow("Pick the Score", `${score.h}-${score.a}`, score.p));
+  });
+  return rows;
+}
+
+function compareSingaporePoolsMarkets(event, prediction, match) {
+  const base = modelComparableMarkets(prediction, match);
+  const markets = Array.isArray(event.markets) ? event.markets : [];
+  return base.map((row) => {
+    const selection = findSingaporePoolsSelection(markets, row.market, row.selection);
+    if (!selection) return row;
+    const listedOdds = Number(selection.odds || selection.price || selection.decimalOdds);
+    return {
+      ...row,
+      listedOdds: Number.isFinite(listedOdds) ? listedOdds : null,
+      available: selection.available !== false && selection.suspended !== true,
+      edge: Number.isFinite(listedOdds) ? row.probability * listedOdds - 1 : null,
+    };
+  });
+}
+
+function findSingaporePoolsSelection(markets, marketName, selectionName) {
+  const wantedMarket = normalizeMarketName(marketName);
+  const wantedSelection = normalizeMarketName(selectionName);
+  for (const market of markets) {
+    const marketText = normalizeMarketName(`${market.code || ""} ${market.name || ""}`);
+    if (!marketText.includes(wantedMarket) && !wantedMarket.includes(marketText.replace(/mr|hl|bg|cs/g, "").trim())) continue;
+    const selections = Array.isArray(market.selections) ? market.selections : [];
+    const match = selections.find((selection) => normalizeMarketName(`${selection.name || ""} ${selection.label || ""} ${selection.code || ""}`).includes(wantedSelection));
+    if (match) return match;
+  }
+  return null;
+}
+
+function marketRow(market, selection, probability) {
+  const fairOdds = probability > 0 ? 1 / probability : null;
+  return {
+    market,
+    selection,
+    probability,
+    fairOdds,
+    listedOdds: null,
+    edge: null,
+    available: false,
+  };
+}
+
+function matchByTeams(aHome, aAway, bHome, bAway) {
+  if (!aHome || !aAway) return false;
+  if (!bHome || !bAway) {
+    return Boolean(findFixtureByTeams(aHome, aAway));
+  }
+  const left = [normalizeTeamName(aHome), normalizeTeamName(aAway)].sort().join("|");
+  const right = [normalizeTeamName(bHome), normalizeTeamName(bAway)].sort().join("|");
+  return left === right;
+}
+
+function findFixtureByTeams(home, away) {
+  return state.data.schedule.find((match) => !match.homeTbd && !match.awayTbd && matchByTeams(home, away, match.home, match.away));
+}
+
+function normalizeTeamName(name) {
+  return String(name || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/republic of korea/g, "korea republic")
+    .replace(/usa|u\.s\.a\.|united states of america/g, "united states")
+    .replace(/czech republic/g, "czechia")
+    .replace(/ivory coast/g, "cote d'ivoire")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
+
+function normalizeMarketName(name) {
+  return String(name || "")
+    .toLowerCase()
+    .replace(/&/g, "and")
+    .replace(/over under/g, "over/under")
+    .replace(/total goals over\/under|hl/g, "over/under 2.5")
+    .replace(/will both teams score|bg/g, "both teams score")
+    .replace(/pick the score|cs/g, "pick the score")
+    .replace(/1x2|mr/g, "1x2")
+    .replace(/[^a-z0-9./]+/g, " ")
+    .trim();
+}
+
+function formatSnapshotTime(value) {
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return String(value);
+  return new Intl.DateTimeFormat("en-SG", {
+    dateStyle: "medium",
+    timeStyle: "short",
+    timeZone: "Asia/Singapore",
+  }).format(date);
 }
 
 function renderMethod(ratings, sim) {
