@@ -38,5 +38,15 @@
     "away": "Paraguay",
     "homeGoals": 4,
     "awayGoals": 1
+  },
+  {
+    "id": "8",
+    "date": "2026-06-13",
+    "stage": "group",
+    "group": "B",
+    "home": "Qatar",
+    "away": "Switzerland",
+    "homeGoals": 1,
+    "awayGoals": 1
   }
 ]
