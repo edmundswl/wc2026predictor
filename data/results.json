@@ -28,5 +28,15 @@
     "away": "Bosnia and Herzegovina",
     "homeGoals": 1,
     "awayGoals": 1
+  },
+  {
+    "id": "19",
+    "date": "2026-06-12",
+    "stage": "group",
+    "group": "D",
+    "home": "United States",
+    "away": "Paraguay",
+    "homeGoals": 4,
+    "awayGoals": 1
   }
 ]
