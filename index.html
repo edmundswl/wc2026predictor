@@ -12,14 +12,21 @@
         }
       } catch (error) {}
     </script>
-    <link rel="stylesheet" href="./styles.css?v=4">
+    <link rel="stylesheet" href="./styles.css?v=5">
   </head>
   <body>
     <div id="app"></div>
     <script type="module" src="./app.js?v=4"></script>
+    <div id="bmc-widget" class="bmc-widget" hidden>
+      <a class="bmc-fallback" href="https://www.buymeacoffee.com/eswl" target="_blank" rel="noreferrer noopener">Buy me a coffee</a>
+    </div>
     <script>
       window.addEventListener("load", () => {
         window.setTimeout(() => {
+          const container = document.querySelector("#bmc-widget");
+          if (!container) return;
+          container.hidden = false;
+
           const script = document.createElement("script");
           const attributes = {
             type: "text/javascript",
@@ -39,7 +46,14 @@
             script.setAttribute(key, value);
           });
 
-          document.body.appendChild(script);
+          script.addEventListener("load", () => {
+            window.setTimeout(() => {
+              const rendered = container.querySelector(".bmc-btn, .bmc-button, iframe, a:not(.bmc-fallback)");
+              if (rendered) container.classList.add("loaded");
+            }, 500);
+          });
+
+          container.appendChild(script);
         }, 3000);
       }, { once: true });
     </script>

@@ -58,6 +58,41 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.bmc-widget {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 80;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.bmc-widget[hidden] {
+  display: none;
+}
+
+.bmc-fallback {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 18px;
+  border: 2px solid #000;
+  border-radius: 999px;
+  background: #ff5f5f;
+  box-shadow: var(--shadow);
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.bmc-widget.loaded .bmc-fallback {
+  display: none;
+}
+
 button,
 select,
 input {
