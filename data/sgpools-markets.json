@@ -1,24 +1,54 @@
 {
-  "generatedAt": null,
+  "generatedAt": "2026-06-13T08:29:19.417Z",
   "sourceUrl": "https://online.singaporepools.com/en/sports",
-  "status": "not_connected",
-  "note": "No live Singapore Pools market snapshot is bundled yet. The public sports page exposes football bet-type labels, while live event prices are loaded by Singapore Pools' app runtime.",
+  "competitionUrl": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
+  "mode": "availability_only",
+  "status": "availability_snapshot",
+  "note": "Singapore Pools public pages exposed World Cup event listings. Live prices are intentionally not fetched.",
   "betTypes": [
+    {
+      "code": "WH",
+      "name": "1/2 Goal"
+    },
+    {
+      "code": "FS",
+      "name": "1st Goal Scorer"
+    },
     {
       "code": "MR",
       "name": "1X2"
+    },
+    {
+      "code": "AH",
+      "name": "Asian Handicap/HT Asian Handicap"
+    },
+    {
+      "code": "H1",
+      "name": "Halftime 1x2"
+    },
+    {
+      "code": "TG2",
+      "name": "Halftime Total Goals"
+    },
+    {
+      "code": "HF",
+      "name": "Halftime-Fulltime"
+    },
+    {
+      "code": "MH",
+      "name": "Handicap 1X2"
+    },
+    {
+      "code": "LS",
+      "name": "Last Goal Scorer"
     },
     {
       "code": "CS",
       "name": "Pick the Score"
     },
     {
-      "code": "HL",
-      "name": "Total Goals Over/Under"
-    },
-    {
-      "code": "BG",
-      "name": "Will Both Teams Score"
+      "code": "NGN",
+      "name": "Team to Score 1st Goal"
     },
     {
       "code": "EG",
@@ -29,37 +59,65 @@
       "name": "Total Goals Odd/Even"
     },
     {
-      "code": "AH",
-      "name": "Asian Handicap / HT Asian Handicap"
+      "code": "HL",
+      "name": "Total Goals Over/Under"
     },
     {
-      "code": "MH",
-      "name": "Handicap 1X2"
-    },
-    {
-      "code": "H1",
-      "name": "Halftime 1X2"
-    },
-    {
-      "code": "HF",
-      "name": "Halftime-Fulltime"
-    },
-    {
-      "code": "WH",
-      "name": "1/2 Goal"
-    },
-    {
-      "code": "NGN",
-      "name": "Team to Score 1st Goal"
-    },
-    {
-      "code": "FS",
-      "name": "1st Goal Scorer"
-    },
-    {
-      "code": "LS",
-      "name": "Last Goal Scorer"
+      "code": "BG",
+      "name": "Will Both Teams Score"
     }
   ],
-  "events": []
+  "events": [
+    {
+      "competition": "W Cup",
+      "home": "Ghana",
+      "away": "Panama",
+      "kickoff": null,
+      "status": "public-listing",
+      "source": "sports",
+      "sourceUrl": "https://online.singaporepools.com/en/sports",
+      "eventId": "139985",
+      "markets": []
+    },
+    {
+      "competition": "W Cup",
+      "home": "France",
+      "away": "Senegal",
+      "kickoff": null,
+      "status": "public-listing",
+      "source": "w-cup",
+      "sourceUrl": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
+      "eventId": "139975",
+      "markets": []
+    }
+  ],
+  "checkedPages": [
+    {
+      "label": "sports",
+      "url": "https://online.singaporepools.com/en/sports",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 117538,
+      "error": null
+    },
+    {
+      "label": "w-cup",
+      "url": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 109686,
+      "error": null
+    },
+    {
+      "label": "opening-odds",
+      "url": "https://online.singaporepools.com/en/sports/opening-odds",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 107375,
+      "error": null
+    }
+  ]
 }
