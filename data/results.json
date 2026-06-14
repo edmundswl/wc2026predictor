@@ -78,5 +78,15 @@
     "away": "Türkiye",
     "homeGoals": 2,
     "awayGoals": 0
+  },
+  {
+    "id": "25",
+    "date": "2026-06-14",
+    "stage": "group",
+    "group": "E",
+    "home": "Germany",
+    "away": "Curaçao",
+    "homeGoals": 7,
+    "awayGoals": 1
   }
 ]
