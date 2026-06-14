@@ -68,5 +68,15 @@
     "away": "Scotland",
     "homeGoals": 0,
     "awayGoals": 1
+  },
+  {
+    "id": "20",
+    "date": "2026-06-13",
+    "stage": "group",
+    "group": "D",
+    "home": "Australia",
+    "away": "Türkiye",
+    "homeGoals": 2,
+    "awayGoals": 0
   }
 ]
