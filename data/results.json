@@ -88,5 +88,15 @@
     "away": "Curaçao",
     "homeGoals": 7,
     "awayGoals": 1
+  },
+  {
+    "id": "31",
+    "date": "2026-06-14",
+    "stage": "group",
+    "group": "F",
+    "home": "Netherlands",
+    "away": "Japan",
+    "homeGoals": 2,
+    "awayGoals": 2
   }
 ]
