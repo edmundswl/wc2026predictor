@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T09:43:40.877Z",
+  "generatedAt": "2026-06-14T04:49:30.322Z",
   "sourceUrl": "https://online.singaporepools.com/en/sports",
   "competitionUrl": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
   "mode": "availability_only",
@@ -70,24 +70,24 @@
   "events": [
     {
       "competition": "W Cup",
-      "home": "France",
-      "away": "Senegal",
-      "kickoff": null,
-      "status": "public-listing",
-      "source": "sports",
-      "sourceUrl": "https://online.singaporepools.com/en/sports",
-      "eventId": "139975",
-      "markets": []
-    },
-    {
-      "competition": "W Cup",
       "home": "Ghana",
       "away": "Panama",
       "kickoff": null,
       "status": "public-listing",
+      "source": "sports",
+      "sourceUrl": "https://online.singaporepools.com/en/sports",
+      "eventId": "139985",
+      "markets": []
+    },
+    {
+      "competition": "W Cup",
+      "home": "France",
+      "away": "Senegal",
+      "kickoff": null,
+      "status": "public-listing",
       "source": "w-cup",
       "sourceUrl": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
-      "eventId": "139985",
+      "eventId": "139975",
       "markets": []
     }
   ],
@@ -98,7 +98,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 117540,
+      "bytes": 117538,
       "error": null
     },
     {
@@ -107,7 +107,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 109684,
+      "bytes": 109686,
       "error": null
     },
     {
@@ -116,7 +116,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 107375,
+      "bytes": 107373,
       "error": null
     }
   ]
