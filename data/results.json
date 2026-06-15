@@ -90,6 +90,16 @@
     "awayGoals": 1
   },
   {
+    "id": "26",
+    "date": "2026-06-14",
+    "stage": "group",
+    "group": "E",
+    "home": "Côte d'Ivoire",
+    "away": "Ecuador",
+    "homeGoals": 1,
+    "awayGoals": 0
+  },
+  {
     "id": "31",
     "date": "2026-06-14",
     "stage": "group",
@@ -98,5 +108,15 @@
     "away": "Japan",
     "homeGoals": 2,
     "awayGoals": 2
+  },
+  {
+    "id": "32",
+    "date": "2026-06-14",
+    "stage": "group",
+    "group": "F",
+    "home": "Sweden",
+    "away": "Tunisia",
+    "homeGoals": 5,
+    "awayGoals": 1
   }
 ]
