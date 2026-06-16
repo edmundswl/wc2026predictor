@@ -128,5 +128,25 @@
     "away": "Egypt",
     "homeGoals": 1,
     "awayGoals": 1
+  },
+  {
+    "id": "38",
+    "date": "2026-06-15",
+    "stage": "group",
+    "group": "G",
+    "home": "Iran",
+    "away": "New Zealand",
+    "homeGoals": 2,
+    "awayGoals": 2
+  },
+  {
+    "id": "44",
+    "date": "2026-06-15",
+    "stage": "group",
+    "group": "H",
+    "home": "Saudi Arabia",
+    "away": "Uruguay",
+    "homeGoals": 1,
+    "awayGoals": 1
   }
 ]
