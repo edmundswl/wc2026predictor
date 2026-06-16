@@ -148,5 +148,15 @@
     "away": "Uruguay",
     "homeGoals": 1,
     "awayGoals": 1
+  },
+  {
+    "id": "49",
+    "date": "2026-06-16",
+    "stage": "group",
+    "group": "I",
+    "home": "France",
+    "away": "Senegal",
+    "homeGoals": 3,
+    "awayGoals": 1
   }
 ]
