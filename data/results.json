@@ -178,5 +178,15 @@
     "away": "Algeria",
     "homeGoals": 3,
     "awayGoals": 0
+  },
+  {
+    "id": "56",
+    "date": "2026-06-16",
+    "stage": "group",
+    "group": "J",
+    "home": "Austria",
+    "away": "Jordan",
+    "homeGoals": 3,
+    "awayGoals": 1
   }
 ]
