@@ -198,5 +198,15 @@
     "away": "Congo DR",
     "homeGoals": 1,
     "awayGoals": 1
+  },
+  {
+    "id": "67",
+    "date": "2026-06-17",
+    "stage": "group",
+    "group": "L",
+    "home": "England",
+    "away": "Croatia",
+    "homeGoals": 4,
+    "awayGoals": 2
   }
 ]
