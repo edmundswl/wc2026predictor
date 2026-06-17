@@ -158,5 +158,25 @@
     "away": "Senegal",
     "homeGoals": 3,
     "awayGoals": 1
+  },
+  {
+    "id": "50",
+    "date": "2026-06-16",
+    "stage": "group",
+    "group": "I",
+    "home": "Iraq",
+    "away": "Norway",
+    "homeGoals": 1,
+    "awayGoals": 4
+  },
+  {
+    "id": "55",
+    "date": "2026-06-16",
+    "stage": "group",
+    "group": "J",
+    "home": "Argentina",
+    "away": "Algeria",
+    "homeGoals": 3,
+    "awayGoals": 0
   }
 ]
