@@ -200,6 +200,16 @@
     "awayGoals": 1
   },
   {
+    "id": "62",
+    "date": "2026-06-17",
+    "stage": "group",
+    "group": "K",
+    "home": "Uzbekistan",
+    "away": "Colombia",
+    "homeGoals": 1,
+    "awayGoals": 3
+  },
+  {
     "id": "67",
     "date": "2026-06-17",
     "stage": "group",
