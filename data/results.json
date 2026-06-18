@@ -208,5 +208,15 @@
     "away": "Croatia",
     "homeGoals": 4,
     "awayGoals": 2
+  },
+  {
+    "id": "68",
+    "date": "2026-06-17",
+    "stage": "group",
+    "group": "L",
+    "home": "Ghana",
+    "away": "Panama",
+    "homeGoals": 1,
+    "awayGoals": 0
   }
 ]
