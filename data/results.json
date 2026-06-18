@@ -238,5 +238,15 @@
     "away": "Panama",
     "homeGoals": 1,
     "awayGoals": 0
+  },
+  {
+    "id": "3",
+    "date": "2026-06-18",
+    "stage": "group",
+    "group": "A",
+    "home": "Czechia",
+    "away": "South Africa",
+    "homeGoals": 1,
+    "awayGoals": 1
   }
 ]
