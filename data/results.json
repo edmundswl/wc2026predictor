@@ -140,6 +140,16 @@
     "awayGoals": 2
   },
   {
+    "id": "43",
+    "date": "2026-06-15",
+    "stage": "group",
+    "group": "H",
+    "home": "Spain",
+    "away": "Cabo Verde",
+    "homeGoals": 0,
+    "awayGoals": 0
+  },
+  {
     "id": "44",
     "date": "2026-06-15",
     "stage": "group",
