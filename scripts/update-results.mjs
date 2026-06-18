@@ -33,6 +33,18 @@ const TEAM_ALIASES = new Map([
   ["côte d ivoire", "cote d ivoire"],
   ["curacao", "curacao"],
   ["curaçao", "curacao"],
+  ["cabo verde", "cabo verde"],
+  ["cape verde", "cabo verde"],
+  ["cape verde islands", "cabo verde"],
+  ["cabo verde islands", "cabo verde"],
+  ["congo dr", "congo dr"],
+  ["dr congo", "congo dr"],
+  ["d r congo", "congo dr"],
+  ["drc", "congo dr"],
+  ["democratic republic of congo", "congo dr"],
+  ["democratic republic congo", "congo dr"],
+  ["congo democratic republic", "congo dr"],
+  ["congo kinshasa", "congo dr"],
 ]);
 
 main().catch((error) => {
