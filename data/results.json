@@ -250,6 +250,16 @@
     "awayGoals": 1
   },
   {
+    "id": "4",
+    "date": "2026-06-18",
+    "stage": "group",
+    "group": "A",
+    "home": "Mexico",
+    "away": "Korea Republic",
+    "homeGoals": 1,
+    "awayGoals": 0
+  },
+  {
     "id": "9",
     "date": "2026-06-18",
     "stage": "group",
@@ -258,5 +268,15 @@
     "away": "Bosnia and Herzegovina",
     "homeGoals": 4,
     "awayGoals": 1
+  },
+  {
+    "id": "10",
+    "date": "2026-06-18",
+    "stage": "group",
+    "group": "B",
+    "home": "Canada",
+    "away": "Qatar",
+    "homeGoals": 6,
+    "awayGoals": 0
   }
 ]
