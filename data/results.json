@@ -278,5 +278,15 @@
     "away": "Qatar",
     "homeGoals": 6,
     "awayGoals": 0
+  },
+  {
+    "id": "21",
+    "date": "2026-06-19",
+    "stage": "group",
+    "group": "D",
+    "home": "United States",
+    "away": "Australia",
+    "homeGoals": 2,
+    "awayGoals": 0
   }
 ]
