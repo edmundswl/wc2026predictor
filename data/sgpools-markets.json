@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T05:02:17.911Z",
+  "generatedAt": "2026-06-20T04:15:19.316Z",
   "sourceUrl": "https://online.singaporepools.com/en/sports",
   "competitionUrl": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
   "mode": "availability_only",
@@ -70,13 +70,13 @@
   "events": [
     {
       "competition": "W Cup",
-      "home": "Czech Republic",
-      "away": "South Africa",
+      "home": "Brazil",
+      "away": "Haiti",
       "kickoff": null,
       "status": "public-listing",
       "source": "sports",
       "sourceUrl": "https://online.singaporepools.com/en/sports",
-      "eventId": "140058",
+      "eventId": "140070",
       "markets": []
     }
   ],
@@ -87,7 +87,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 116550,
+      "bytes": 116054,
       "error": null
     },
     {
@@ -96,7 +96,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 108477,
+      "bytes": 107996,
       "error": null
     },
     {
@@ -105,7 +105,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 106373,
+      "bytes": 105685,
       "error": null
     }
   ]

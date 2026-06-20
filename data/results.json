@@ -290,6 +290,16 @@
     "awayGoals": 1
   },
   {
+    "id": "16",
+    "date": "2026-06-19",
+    "stage": "group",
+    "group": "C",
+    "home": "Brazil",
+    "away": "Haiti",
+    "homeGoals": 3,
+    "awayGoals": 0
+  },
+  {
     "id": "21",
     "date": "2026-06-19",
     "stage": "group",
