@@ -280,6 +280,16 @@
     "awayGoals": 0
   },
   {
+    "id": "15",
+    "date": "2026-06-19",
+    "stage": "group",
+    "group": "C",
+    "home": "Scotland",
+    "away": "Morocco",
+    "homeGoals": 0,
+    "awayGoals": 1
+  },
+  {
     "id": "21",
     "date": "2026-06-19",
     "stage": "group",
