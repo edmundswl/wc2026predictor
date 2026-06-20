@@ -318,5 +318,15 @@
     "away": "Paraguay",
     "homeGoals": 0,
     "awayGoals": 1
+  },
+  {
+    "id": "33",
+    "date": "2026-06-20",
+    "stage": "group",
+    "group": "F",
+    "home": "Netherlands",
+    "away": "Sweden",
+    "homeGoals": 5,
+    "awayGoals": 1
   }
 ]
