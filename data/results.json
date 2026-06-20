@@ -320,6 +320,16 @@
     "awayGoals": 1
   },
   {
+    "id": "27",
+    "date": "2026-06-20",
+    "stage": "group",
+    "group": "E",
+    "home": "Germany",
+    "away": "Côte d'Ivoire",
+    "homeGoals": 2,
+    "awayGoals": 1
+  },
+  {
     "id": "33",
     "date": "2026-06-20",
     "stage": "group",
