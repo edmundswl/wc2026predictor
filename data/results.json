@@ -308,5 +308,15 @@
     "away": "Australia",
     "homeGoals": 2,
     "awayGoals": 0
+  },
+  {
+    "id": "22",
+    "date": "2026-06-19",
+    "stage": "group",
+    "group": "D",
+    "home": "Türkiye",
+    "away": "Paraguay",
+    "homeGoals": 0,
+    "awayGoals": 1
   }
 ]
