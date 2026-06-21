@@ -348,5 +348,15 @@
     "away": "Sweden",
     "homeGoals": 5,
     "awayGoals": 1
+  },
+  {
+    "id": "34",
+    "date": "2026-06-20",
+    "stage": "group",
+    "group": "F",
+    "home": "Tunisia",
+    "away": "Japan",
+    "homeGoals": 0,
+    "awayGoals": 4
   }
 ]
