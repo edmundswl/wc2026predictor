@@ -330,6 +330,16 @@
     "awayGoals": 1
   },
   {
+    "id": "28",
+    "date": "2026-06-20",
+    "stage": "group",
+    "group": "E",
+    "home": "Ecuador",
+    "away": "Curaçao",
+    "homeGoals": 0,
+    "awayGoals": 0
+  },
+  {
     "id": "33",
     "date": "2026-06-20",
     "stage": "group",
