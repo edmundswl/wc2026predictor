@@ -358,5 +358,15 @@
     "away": "Japan",
     "homeGoals": 0,
     "awayGoals": 4
+  },
+  {
+    "id": "45",
+    "date": "2026-06-21",
+    "stage": "group",
+    "group": "H",
+    "home": "Spain",
+    "away": "Saudi Arabia",
+    "homeGoals": 4,
+    "awayGoals": 0
   }
 ]
