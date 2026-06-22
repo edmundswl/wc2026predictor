@@ -398,5 +398,15 @@
     "away": "Cabo Verde",
     "homeGoals": 2,
     "awayGoals": 2
+  },
+  {
+    "id": "57",
+    "date": "2026-06-22",
+    "stage": "group",
+    "group": "J",
+    "home": "Argentina",
+    "away": "Austria",
+    "homeGoals": 2,
+    "awayGoals": 0
   }
 ]
