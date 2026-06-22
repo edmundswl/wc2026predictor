@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-21T04:59:10.744Z",
+  "generatedAt": "2026-06-22T05:06:40.152Z",
   "sourceUrl": "https://online.singaporepools.com/en/sports",
   "competitionUrl": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
   "mode": "availability_only",
-  "status": "availability_snapshot",
-  "note": "Singapore Pools public pages exposed World Cup event listings. Live prices are intentionally not fetched.",
+  "status": "checked_no_public_events",
+  "note": "Singapore Pools public pages were checked, but no World Cup event listings were exposed.",
   "betTypes": [
     {
       "code": "WH",
@@ -67,19 +67,7 @@
       "name": "Will Both Teams Score"
     }
   ],
-  "events": [
-    {
-      "competition": "W Cup",
-      "home": "Brazil",
-      "away": "Haiti",
-      "kickoff": null,
-      "status": "public-listing",
-      "source": "opening-odds",
-      "sourceUrl": "https://online.singaporepools.com/en/sports/opening-odds",
-      "eventId": "140070",
-      "markets": []
-    }
-  ],
+  "events": [],
   "checkedPages": [
     {
       "label": "sports",
@@ -96,7 +84,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 107996,
+      "bytes": 107994,
       "error": null
     },
     {
@@ -105,7 +93,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 105877,
+      "bytes": 105685,
       "error": null
     }
   ]
