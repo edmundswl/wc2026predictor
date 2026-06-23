@@ -438,5 +438,15 @@
     "away": "Algeria",
     "homeGoals": 1,
     "awayGoals": 2
+  },
+  {
+    "id": "63",
+    "date": "2026-06-23",
+    "stage": "group",
+    "group": "K",
+    "home": "Portugal",
+    "away": "Uzbekistan",
+    "homeGoals": 5,
+    "awayGoals": 0
   }
 ]
