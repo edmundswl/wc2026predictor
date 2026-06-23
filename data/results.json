@@ -448,5 +448,15 @@
     "away": "Uzbekistan",
     "homeGoals": 5,
     "awayGoals": 0
+  },
+  {
+    "id": "69",
+    "date": "2026-06-23",
+    "stage": "group",
+    "group": "L",
+    "home": "England",
+    "away": "Ghana",
+    "homeGoals": 0,
+    "awayGoals": 0
   }
 ]
