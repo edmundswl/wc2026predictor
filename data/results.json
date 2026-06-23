@@ -400,6 +400,26 @@
     "awayGoals": 2
   },
   {
+    "id": "51",
+    "date": "2026-06-22",
+    "stage": "group",
+    "group": "I",
+    "home": "France",
+    "away": "Iraq",
+    "homeGoals": 3,
+    "awayGoals": 0
+  },
+  {
+    "id": "52",
+    "date": "2026-06-22",
+    "stage": "group",
+    "group": "I",
+    "home": "Norway",
+    "away": "Senegal",
+    "homeGoals": 3,
+    "awayGoals": 2
+  },
+  {
     "id": "57",
     "date": "2026-06-22",
     "stage": "group",
