@@ -478,5 +478,25 @@
     "away": "Croatia",
     "homeGoals": 0,
     "awayGoals": 1
+  },
+  {
+    "id": "11",
+    "date": "2026-06-24",
+    "stage": "group",
+    "group": "B",
+    "home": "Switzerland",
+    "away": "Canada",
+    "homeGoals": 2,
+    "awayGoals": 1
+  },
+  {
+    "id": "12",
+    "date": "2026-06-24",
+    "stage": "group",
+    "group": "B",
+    "home": "Bosnia and Herzegovina",
+    "away": "Qatar",
+    "homeGoals": 3,
+    "awayGoals": 1
   }
 ]
