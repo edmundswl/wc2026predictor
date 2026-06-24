@@ -450,6 +450,16 @@
     "awayGoals": 0
   },
   {
+    "id": "64",
+    "date": "2026-06-23",
+    "stage": "group",
+    "group": "K",
+    "home": "Colombia",
+    "away": "Congo DR",
+    "homeGoals": 1,
+    "awayGoals": 0
+  },
+  {
     "id": "69",
     "date": "2026-06-23",
     "stage": "group",
@@ -458,5 +468,15 @@
     "away": "Ghana",
     "homeGoals": 0,
     "awayGoals": 0
+  },
+  {
+    "id": "70",
+    "date": "2026-06-23",
+    "stage": "group",
+    "group": "L",
+    "home": "Panama",
+    "away": "Croatia",
+    "homeGoals": 0,
+    "awayGoals": 1
   }
 ]
