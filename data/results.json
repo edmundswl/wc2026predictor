@@ -538,5 +538,25 @@
     "away": "Haiti",
     "homeGoals": 4,
     "awayGoals": 2
+  },
+  {
+    "id": "29",
+    "date": "2026-06-25",
+    "stage": "group",
+    "group": "E",
+    "home": "Curaçao",
+    "away": "Côte d'Ivoire",
+    "homeGoals": 0,
+    "awayGoals": 2
+  },
+  {
+    "id": "30",
+    "date": "2026-06-25",
+    "stage": "group",
+    "group": "E",
+    "home": "Ecuador",
+    "away": "Germany",
+    "homeGoals": 2,
+    "awayGoals": 1
   }
 ]
