@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T04:08:00.833Z",
+  "generatedAt": "2026-06-25T04:08:21.458Z",
   "sourceUrl": "https://online.singaporepools.com/en/sports",
   "competitionUrl": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
   "mode": "availability_only",
@@ -74,8 +74,8 @@
       "away": "Austria",
       "kickoff": null,
       "status": "public-listing",
-      "source": "opening-odds",
-      "sourceUrl": "https://online.singaporepools.com/en/sports/opening-odds",
+      "source": "sports",
+      "sourceUrl": "https://online.singaporepools.com/en/sports",
       "eventId": "140097",
       "markets": []
     }
@@ -87,7 +87,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 117407,
+      "bytes": 116539,
       "error": null
     },
     {
@@ -105,7 +105,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 106788,
+      "bytes": 106320,
       "error": null
     }
   ]
