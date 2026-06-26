@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T04:08:21.458Z",
+  "generatedAt": "2026-06-26T04:15:15.833Z",
   "sourceUrl": "https://online.singaporepools.com/en/sports",
   "competitionUrl": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
   "mode": "availability_only",
@@ -70,13 +70,13 @@
   "events": [
     {
       "competition": "W Cup",
-      "home": "Argentina",
-      "away": "Austria",
+      "home": "Ecuador",
+      "away": "Germany",
       "kickoff": null,
       "status": "public-listing",
       "source": "sports",
       "sourceUrl": "https://online.singaporepools.com/en/sports",
-      "eventId": "140097",
+      "eventId": "140127",
       "markets": []
     }
   ],
@@ -87,7 +87,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 116539,
+      "bytes": 118123,
       "error": null
     },
     {
@@ -96,7 +96,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 109541,
+      "bytes": 110203,
       "error": null
     },
     {
@@ -105,7 +105,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 106320,
+      "bytes": 107904,
       "error": null
     }
   ]

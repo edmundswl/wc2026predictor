@@ -540,6 +540,26 @@
     "awayGoals": 2
   },
   {
+    "id": "23",
+    "date": "2026-06-25",
+    "stage": "group",
+    "group": "D",
+    "home": "Türkiye",
+    "away": "United States",
+    "homeGoals": 3,
+    "awayGoals": 2
+  },
+  {
+    "id": "24",
+    "date": "2026-06-25",
+    "stage": "group",
+    "group": "D",
+    "home": "Paraguay",
+    "away": "Australia",
+    "homeGoals": 0,
+    "awayGoals": 0
+  },
+  {
     "id": "29",
     "date": "2026-06-25",
     "stage": "group",
@@ -558,5 +578,25 @@
     "away": "Germany",
     "homeGoals": 2,
     "awayGoals": 1
+  },
+  {
+    "id": "35",
+    "date": "2026-06-25",
+    "stage": "group",
+    "group": "F",
+    "home": "Japan",
+    "away": "Sweden",
+    "homeGoals": 1,
+    "awayGoals": 1
+  },
+  {
+    "id": "36",
+    "date": "2026-06-25",
+    "stage": "group",
+    "group": "F",
+    "home": "Tunisia",
+    "away": "Netherlands",
+    "homeGoals": 1,
+    "awayGoals": 3
   }
 ]
