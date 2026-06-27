@@ -658,5 +658,25 @@
     "away": "Iraq",
     "homeGoals": 5,
     "awayGoals": 0
+  },
+  {
+    "id": "71",
+    "date": "2026-06-27",
+    "stage": "group",
+    "group": "L",
+    "home": "Panama",
+    "away": "England",
+    "homeGoals": 0,
+    "awayGoals": 2
+  },
+  {
+    "id": "72",
+    "date": "2026-06-27",
+    "stage": "group",
+    "group": "L",
+    "home": "Croatia",
+    "away": "Ghana",
+    "homeGoals": 2,
+    "awayGoals": 1
   }
 ]
