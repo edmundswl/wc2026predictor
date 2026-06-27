@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T04:15:15.833Z",
+  "generatedAt": "2026-06-27T04:01:07.762Z",
   "sourceUrl": "https://online.singaporepools.com/en/sports",
   "competitionUrl": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
   "mode": "availability_only",
@@ -70,13 +70,13 @@
   "events": [
     {
       "competition": "W Cup",
-      "home": "Ecuador",
-      "away": "Germany",
+      "home": "Senegal",
+      "away": "Iraq",
       "kickoff": null,
       "status": "public-listing",
-      "source": "sports",
-      "sourceUrl": "https://online.singaporepools.com/en/sports",
-      "eventId": "140127",
+      "source": "opening-odds",
+      "sourceUrl": "https://online.singaporepools.com/en/sports/opening-odds",
+      "eventId": "140154",
       "markets": []
     }
   ],
@@ -87,7 +87,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 118123,
+      "bytes": 117928,
       "error": null
     },
     {
@@ -96,7 +96,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 110203,
+      "bytes": 110020,
       "error": null
     },
     {
@@ -105,7 +105,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 107904,
+      "bytes": 107901,
       "error": null
     }
   ]

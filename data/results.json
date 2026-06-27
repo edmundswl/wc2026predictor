@@ -600,6 +600,26 @@
     "awayGoals": 3
   },
   {
+    "id": "47",
+    "date": "2026-06-26",
+    "stage": "group",
+    "group": "H",
+    "home": "Cabo Verde",
+    "away": "Saudi Arabia",
+    "homeGoals": 0,
+    "awayGoals": 0
+  },
+  {
+    "id": "48",
+    "date": "2026-06-26",
+    "stage": "group",
+    "group": "H",
+    "home": "Uruguay",
+    "away": "Spain",
+    "homeGoals": 0,
+    "awayGoals": 1
+  },
+  {
     "id": "53",
     "date": "2026-06-26",
     "stage": "group",
