@@ -660,6 +660,46 @@
     "awayGoals": 0
   },
   {
+    "id": "59",
+    "date": "2026-06-27",
+    "stage": "group",
+    "group": "J",
+    "home": "Algeria",
+    "away": "Austria",
+    "homeGoals": 3,
+    "awayGoals": 3
+  },
+  {
+    "id": "60",
+    "date": "2026-06-27",
+    "stage": "group",
+    "group": "J",
+    "home": "Jordan",
+    "away": "Argentina",
+    "homeGoals": 1,
+    "awayGoals": 3
+  },
+  {
+    "id": "65",
+    "date": "2026-06-27",
+    "stage": "group",
+    "group": "K",
+    "home": "Colombia",
+    "away": "Portugal",
+    "homeGoals": 0,
+    "awayGoals": 0
+  },
+  {
+    "id": "66",
+    "date": "2026-06-27",
+    "stage": "group",
+    "group": "K",
+    "home": "Congo DR",
+    "away": "Uzbekistan",
+    "homeGoals": 3,
+    "awayGoals": 1
+  },
+  {
     "id": "71",
     "date": "2026-06-27",
     "stage": "group",
