@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-01T04:25:56.272Z",
+  "generatedAt": "2026-07-02T04:04:59.367Z",
   "sourceUrl": "https://online.singaporepools.com/en/sports",
   "competitionUrl": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
   "mode": "availability_only",
-  "status": "checked_no_public_events",
-  "note": "Singapore Pools public pages were checked, but no World Cup event listings were exposed.",
+  "status": "availability_snapshot",
+  "note": "Singapore Pools public pages exposed World Cup event listings. Live prices are intentionally not fetched.",
   "betTypes": [
     {
       "code": "WH",
@@ -67,7 +67,19 @@
       "name": "Will Both Teams Score"
     }
   ],
-  "events": [],
+  "events": [
+    {
+      "competition": "W Cup",
+      "home": "Spain",
+      "away": "Austria",
+      "kickoff": null,
+      "status": "public-listing",
+      "source": "opening-odds",
+      "sourceUrl": "https://online.singaporepools.com/en/sports/opening-odds",
+      "eventId": "140223",
+      "markets": []
+    }
+  ],
   "checkedPages": [
     {
       "label": "sports",
@@ -75,7 +87,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 116898,
+      "bytes": 117309,
       "error": null
     },
     {
@@ -84,7 +96,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 108957,
+      "bytes": 109612,
       "error": null
     },
     {
@@ -93,7 +105,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 106646,
+      "bytes": 107286,
       "error": null
     }
   ]
