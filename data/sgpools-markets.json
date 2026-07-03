@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T04:04:59.367Z",
+  "generatedAt": "2026-07-03T03:51:31.071Z",
   "sourceUrl": "https://online.singaporepools.com/en/sports",
   "competitionUrl": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
   "mode": "availability_only",
@@ -70,13 +70,24 @@
   "events": [
     {
       "competition": "W Cup",
-      "home": "Spain",
-      "away": "Austria",
+      "home": "USA",
+      "away": "Belgium",
       "kickoff": null,
       "status": "public-listing",
-      "source": "opening-odds",
-      "sourceUrl": "https://online.singaporepools.com/en/sports/opening-odds",
-      "eventId": "140223",
+      "source": "sports",
+      "sourceUrl": "https://online.singaporepools.com/en/sports",
+      "eventId": "140265",
+      "markets": []
+    },
+    {
+      "competition": "W Cup",
+      "home": "Portugal",
+      "away": "Croatia",
+      "kickoff": null,
+      "status": "public-listing",
+      "source": "w-cup",
+      "sourceUrl": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
+      "eventId": "140225",
       "markets": []
     }
   ],
@@ -87,7 +98,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 117309,
+      "bytes": 118572,
       "error": null
     },
     {
@@ -96,7 +107,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 109612,
+      "bytes": 110636,
       "error": null
     },
     {
@@ -105,7 +116,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 107286,
+      "bytes": 108320,
       "error": null
     }
   ]
