@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T03:51:31.071Z",
+  "generatedAt": "2026-07-04T03:43:13.321Z",
   "sourceUrl": "https://online.singaporepools.com/en/sports",
   "competitionUrl": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
   "mode": "availability_only",
@@ -70,24 +70,24 @@
   "events": [
     {
       "competition": "W Cup",
-      "home": "USA",
-      "away": "Belgium",
+      "home": "Canada",
+      "away": "Morocco",
       "kickoff": null,
       "status": "public-listing",
       "source": "sports",
       "sourceUrl": "https://online.singaporepools.com/en/sports",
-      "eventId": "140265",
+      "eventId": "140235",
       "markets": []
     },
     {
-      "competition": "W Cup",
-      "home": "Portugal",
-      "away": "Croatia",
+      "competition": "Swedish League",
+      "home": "Sirius",
+      "away": "Mjallby AIF",
       "kickoff": null,
       "status": "public-listing",
       "source": "w-cup",
       "sourceUrl": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
-      "eventId": "140225",
+      "eventId": "140237",
       "markets": []
     }
   ],
@@ -98,7 +98,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 118572,
+      "bytes": 119992,
       "error": null
     },
     {
@@ -107,7 +107,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 110636,
+      "bytes": 112053,
       "error": null
     },
     {
@@ -116,7 +116,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 108320,
+      "bytes": 109740,
       "error": null
     }
   ]
