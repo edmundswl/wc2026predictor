@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-08T03:25:56.672Z",
+  "generatedAt": "2026-07-08T09:53:55.620Z",
   "sourceUrl": "https://online.singaporepools.com/en/sports",
   "competitionUrl": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
   "mode": "availability_only",
@@ -70,13 +70,13 @@
   "events": [
     {
       "competition": "W Cup",
-      "home": "Argentina",
-      "away": "Egypt",
+      "home": "France",
+      "away": "Morocco",
       "kickoff": null,
       "status": "public-listing",
-      "source": "w-cup",
-      "sourceUrl": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
-      "eventId": "140300",
+      "source": "sports",
+      "sourceUrl": "https://online.singaporepools.com/en/sports",
+      "eventId": "140306",
       "markets": []
     }
   ],
@@ -87,7 +87,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 117064,
+      "bytes": 117534,
       "error": null
     },
     {
@@ -96,7 +96,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 109147,
+      "bytes": 109593,
       "error": null
     },
     {
@@ -105,7 +105,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 106812,
+      "bytes": 107086,
       "error": null
     }
   ]
