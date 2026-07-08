@@ -518,6 +518,7 @@ function simulateOne(ratings, random, config) {
   }
 
   const actualIds = new Set(state.data.results.map((result) => result.id));
+  const resultById = new Map(state.data.results.map((result) => [result.id, result]));
   let zeroZero = 0;
   for (const result of state.data.results.filter((match) => match.stage === "group")) {
     applyResultToStandings(standings, result.home, result.away, result.homeGoals, result.awayGoals);
@@ -573,7 +574,10 @@ function simulateOne(ratings, random, config) {
   for (const fixture of state.data.schedule.filter((match) => match.stage !== "group")) {
     const home = resolveSlot(fixture.home, fixture.num);
     const away = resolveSlot(fixture.away, fixture.num);
-    const played = sampleKnockout(home.name, away.name, ratings, random, config);
+    const actual = resultById.get(fixture.id);
+    const played = actual
+      ? { hg: actual.homeGoals, ag: actual.awayGoals, winner: knockoutWinnerName(actual) }
+      : sampleKnockout(home.name, away.name, ratings, random, config);
     addGoals(goals, home.name, played.hg);
     addGoals(goals, away.name, played.ag);
     if (played.hg === 0 && played.ag === 0) zeroZero += 1;
@@ -604,6 +608,13 @@ function simulateOne(ratings, random, config) {
 
 function addGoals(map, team, goals) {
   map.set(team, (map.get(team) || 0) + goals);
+}
+
+function knockoutWinnerName(result) {
+  if (result.homeGoals !== result.awayGoals) {
+    return result.homeGoals > result.awayGoals ? result.home : result.away;
+  }
+  return (result.homePens ?? 0) >= (result.awayPens ?? 0) ? result.home : result.away;
 }
 
 function sampleScore(home, away, ratings, random, config) {
@@ -641,6 +652,7 @@ function sampleKnockout(home, away, ratings, random, config) {
 function deterministicProjection(ratings) {
   const standings = currentStandings();
   const actualIds = new Set(state.data.results.map((result) => result.id));
+  const resultById = new Map(state.data.results.map((result) => [result.id, result]));
   const projectedGroupScores = [];
   for (const fixture of state.data.schedule.filter((match) => match.stage === "group" && !actualIds.has(match.id))) {
     const prediction = matchPrediction(fixture.home, fixture.away, ratings);
@@ -675,11 +687,16 @@ function deterministicProjection(ratings) {
   for (const fixture of state.data.schedule.filter((match) => match.stage !== "group")) {
     const home = resolveSlot(fixture.home, fixture.num);
     const away = resolveSlot(fixture.away, fixture.num);
+    const actual = resultById.get(fixture.id);
     const prediction = matchPrediction(home.name, away.name, ratings);
     const homeFav = prediction.pHome >= prediction.pAway;
     const close = Math.abs(prediction.pHome - prediction.pAway) < 0.045;
-    const score = bestScoreline(prediction, homeFav ? "home" : "away", close);
-    const winner = homeFav ? home : away;
+    const score = actual
+      ? { hg: actual.homeGoals, ag: actual.awayGoals }
+      : bestScoreline(prediction, homeFav ? "home" : "away", close);
+    const winner = actual
+      ? (knockoutWinnerName(actual) === home.name ? home : away)
+      : homeFav ? home : away;
     const loser = winner.name === home.name ? away : home;
     winners.set(fixture.num, winner);
     losers.set(fixture.num, loser);
@@ -690,7 +707,7 @@ function deterministicProjection(ratings) {
       homeGoals: score.hg,
       awayGoals: score.ag,
       winner,
-      pens: close,
+      pens: actual ? actual.homeGoals === actual.awayGoals : close,
       pHome: prediction.pHome,
       pAway: prediction.pAway,
     });
@@ -1161,7 +1178,7 @@ function renderScheduleMatch(match, result, ratings) {
     <button class="match-button" ${canPick ? `data-pick="${escapeAttr(match.home)}|${escapeAttr(match.away)}"` : "disabled"}>
       <span class="stage-chip">${tag}</span>
       <span class="team-inline">${homeLabel}</span>
-      <span class="center-score">${result ? `${result.homeGoals}-${result.awayGoals}` : "v"}</span>
+      <span class="center-score">${result ? `${result.homeGoals}-${result.awayGoals}${result.homePens != null ? ` (${result.homePens}-${result.awayPens}p)` : ""}` : "v"}</span>
       <span class="team-inline">${awayLabel}</span>
       <span class="tag">${status}</span>
       <span class="faint" style="grid-column:1 / -1">${localFixtureTime(match)} · ${match.venue} · ${match.time} local listing</span>

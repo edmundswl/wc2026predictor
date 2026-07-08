@@ -942,10 +942,10 @@
     "time": "12:00 UTC-7",
     "stage": "round32",
     "group": null,
-    "home": "2A",
-    "away": "2B",
-    "homeTbd": true,
-    "awayTbd": true,
+    "home": "South Africa",
+    "away": "Canada",
+    "homeTbd": false,
+    "awayTbd": false,
     "venue": "Los Angeles (Inglewood)"
   },
   {
@@ -955,10 +955,10 @@
     "time": "16:30 UTC-4",
     "stage": "round32",
     "group": null,
-    "home": "1E",
-    "away": "3A/B/C/D/F",
-    "homeTbd": true,
-    "awayTbd": true,
+    "home": "Germany",
+    "away": "Paraguay",
+    "homeTbd": false,
+    "awayTbd": false,
     "venue": "Boston (Foxborough)"
   },
   {
@@ -968,10 +968,10 @@
     "time": "19:00 UTC-6",
     "stage": "round32",
     "group": null,
-    "home": "1F",
-    "away": "2C",
-    "homeTbd": true,
-    "awayTbd": true,
+    "home": "Netherlands",
+    "away": "Morocco",
+    "homeTbd": false,
+    "awayTbd": false,
     "venue": "Monterrey (Guadalupe)"
   },
   {
@@ -981,10 +981,10 @@
     "time": "12:00 UTC-5",
     "stage": "round32",
     "group": null,
-    "home": "1C",
-    "away": "2F",
-    "homeTbd": true,
-    "awayTbd": true,
+    "home": "Brazil",
+    "away": "Japan",
+    "homeTbd": false,
+    "awayTbd": false,
     "venue": "Houston"
   },
   {
@@ -994,10 +994,10 @@
     "time": "17:00 UTC-4",
     "stage": "round32",
     "group": null,
-    "home": "1I",
-    "away": "3C/D/F/G/H",
-    "homeTbd": true,
-    "awayTbd": true,
+    "home": "France",
+    "away": "Sweden",
+    "homeTbd": false,
+    "awayTbd": false,
     "venue": "New York/New Jersey (East Rutherford)"
   },
   {
@@ -1007,10 +1007,10 @@
     "time": "12:00 UTC-5",
     "stage": "round32",
     "group": null,
-    "home": "2E",
-    "away": "2I",
-    "homeTbd": true,
-    "awayTbd": true,
+    "home": "Côte d'Ivoire",
+    "away": "Norway",
+    "homeTbd": false,
+    "awayTbd": false,
     "venue": "Dallas (Arlington)"
   },
   {
@@ -1020,10 +1020,10 @@
     "time": "19:00 UTC-6",
     "stage": "round32",
     "group": null,
-    "home": "1A",
-    "away": "3C/E/F/H/I",
-    "homeTbd": true,
-    "awayTbd": true,
+    "home": "Mexico",
+    "away": "Ecuador",
+    "homeTbd": false,
+    "awayTbd": false,
     "venue": "Mexico City"
   },
   {
@@ -1033,10 +1033,10 @@
     "time": "12:00 UTC-4",
     "stage": "round32",
     "group": null,
-    "home": "1L",
-    "away": "3E/H/I/J/K",
-    "homeTbd": true,
-    "awayTbd": true,
+    "home": "England",
+    "away": "Congo DR",
+    "homeTbd": false,
+    "awayTbd": false,
     "venue": "Atlanta"
   },
   {
@@ -1046,10 +1046,10 @@
     "time": "17:00 UTC-7",
     "stage": "round32",
     "group": null,
-    "home": "1D",
-    "away": "3B/E/F/I/J",
-    "homeTbd": true,
-    "awayTbd": true,
+    "home": "United States",
+    "away": "Bosnia and Herzegovina",
+    "homeTbd": false,
+    "awayTbd": false,
     "venue": "San Francisco Bay Area (Santa Clara)"
   },
   {
@@ -1059,10 +1059,10 @@
     "time": "13:00 UTC-7",
     "stage": "round32",
     "group": null,
-    "home": "1G",
-    "away": "3A/E/H/I/J",
-    "homeTbd": true,
-    "awayTbd": true,
+    "home": "Belgium",
+    "away": "Senegal",
+    "homeTbd": false,
+    "awayTbd": false,
     "venue": "Seattle"
   },
   {
@@ -1072,10 +1072,10 @@
     "time": "19:00 UTC-4",
     "stage": "round32",
     "group": null,
-    "home": "2K",
-    "away": "2L",
-    "homeTbd": true,
-    "awayTbd": true,
+    "home": "Portugal",
+    "away": "Croatia",
+    "homeTbd": false,
+    "awayTbd": false,
     "venue": "Toronto"
   },
   {
@@ -1085,10 +1085,10 @@
     "time": "12:00 UTC-7",
     "stage": "round32",
     "group": null,
-    "home": "1H",
-    "away": "2J",
-    "homeTbd": true,
-    "awayTbd": true,
+    "home": "Spain",
+    "away": "Austria",
+    "homeTbd": false,
+    "awayTbd": false,
     "venue": "Los Angeles (Inglewood)"
   },
   {
@@ -1098,10 +1098,10 @@
     "time": "20:00 UTC-7",
     "stage": "round32",
     "group": null,
-    "home": "1B",
-    "away": "3E/F/G/I/J",
-    "homeTbd": true,
-    "awayTbd": true,
+    "home": "Switzerland",
+    "away": "Algeria",
+    "homeTbd": false,
+    "awayTbd": false,
     "venue": "Vancouver"
   },
   {
@@ -1111,10 +1111,10 @@
     "time": "18:00 UTC-4",
     "stage": "round32",
     "group": null,
-    "home": "1J",
-    "away": "2H",
-    "homeTbd": true,
-    "awayTbd": true,
+    "home": "Argentina",
+    "away": "Cabo Verde",
+    "homeTbd": false,
+    "awayTbd": false,
     "venue": "Miami (Miami Gardens)"
   },
   {
@@ -1124,10 +1124,10 @@
     "time": "20:30 UTC-5",
     "stage": "round32",
     "group": null,
-    "home": "1K",
-    "away": "3D/E/I/J/L",
-    "homeTbd": true,
-    "awayTbd": true,
+    "home": "Colombia",
+    "away": "Ghana",
+    "homeTbd": false,
+    "awayTbd": false,
     "venue": "Kansas City"
   },
   {
@@ -1137,10 +1137,10 @@
     "time": "13:00 UTC-5",
     "stage": "round32",
     "group": null,
-    "home": "2D",
-    "away": "2G",
-    "homeTbd": true,
-    "awayTbd": true,
+    "home": "Australia",
+    "away": "Egypt",
+    "homeTbd": false,
+    "awayTbd": false,
     "venue": "Dallas (Arlington)"
   },
   {
@@ -1150,10 +1150,10 @@
     "time": "17:00 UTC-4",
     "stage": "round16",
     "group": null,
-    "home": "W74",
-    "away": "W77",
-    "homeTbd": true,
-    "awayTbd": true,
+    "home": "Paraguay",
+    "away": "France",
+    "homeTbd": false,
+    "awayTbd": false,
     "venue": "Philadelphia"
   },
   {
@@ -1163,10 +1163,10 @@
     "time": "12:00 UTC-5",
     "stage": "round16",
     "group": null,
-    "home": "W73",
-    "away": "W75",
-    "homeTbd": true,
-    "awayTbd": true,
+    "home": "Canada",
+    "away": "Morocco",
+    "homeTbd": false,
+    "awayTbd": false,
     "venue": "Houston"
   },
   {
@@ -1176,10 +1176,10 @@
     "time": "16:00 UTC-4",
     "stage": "round16",
     "group": null,
-    "home": "W76",
-    "away": "W78",
-    "homeTbd": true,
-    "awayTbd": true,
+    "home": "Brazil",
+    "away": "Norway",
+    "homeTbd": false,
+    "awayTbd": false,
     "venue": "New York/New Jersey (East Rutherford)"
   },
   {
@@ -1189,10 +1189,10 @@
     "time": "18:00 UTC-6",
     "stage": "round16",
     "group": null,
-    "home": "W79",
-    "away": "W80",
-    "homeTbd": true,
-    "awayTbd": true,
+    "home": "Mexico",
+    "away": "England",
+    "homeTbd": false,
+    "awayTbd": false,
     "venue": "Mexico City"
   },
   {
@@ -1202,10 +1202,10 @@
     "time": "14:00 UTC-5",
     "stage": "round16",
     "group": null,
-    "home": "W83",
-    "away": "W84",
-    "homeTbd": true,
-    "awayTbd": true,
+    "home": "Portugal",
+    "away": "Spain",
+    "homeTbd": false,
+    "awayTbd": false,
     "venue": "Dallas (Arlington)"
   },
   {
@@ -1215,10 +1215,10 @@
     "time": "17:00 UTC-7",
     "stage": "round16",
     "group": null,
-    "home": "W81",
-    "away": "W82",
-    "homeTbd": true,
-    "awayTbd": true,
+    "home": "United States",
+    "away": "Belgium",
+    "homeTbd": false,
+    "awayTbd": false,
     "venue": "Seattle"
   },
   {
@@ -1228,10 +1228,10 @@
     "time": "12:00 UTC-4",
     "stage": "round16",
     "group": null,
-    "home": "W86",
-    "away": "W88",
-    "homeTbd": true,
-    "awayTbd": true,
+    "home": "Argentina",
+    "away": "Egypt",
+    "homeTbd": false,
+    "awayTbd": false,
     "venue": "Atlanta"
   },
   {
@@ -1241,10 +1241,10 @@
     "time": "13:00 UTC-7",
     "stage": "round16",
     "group": null,
-    "home": "W85",
-    "away": "W87",
-    "homeTbd": true,
-    "awayTbd": true,
+    "home": "Switzerland",
+    "away": "Colombia",
+    "homeTbd": false,
+    "awayTbd": false,
     "venue": "Vancouver"
   },
   {
@@ -1254,10 +1254,10 @@
     "time": "16:00 UTC-4",
     "stage": "quarter",
     "group": null,
-    "home": "W89",
-    "away": "W90",
-    "homeTbd": true,
-    "awayTbd": true,
+    "home": "France",
+    "away": "Morocco",
+    "homeTbd": false,
+    "awayTbd": false,
     "venue": "Boston (Foxborough)"
   },
   {
@@ -1267,10 +1267,10 @@
     "time": "12:00 UTC-7",
     "stage": "quarter",
     "group": null,
-    "home": "W93",
-    "away": "W94",
-    "homeTbd": true,
-    "awayTbd": true,
+    "home": "Spain",
+    "away": "Belgium",
+    "homeTbd": false,
+    "awayTbd": false,
     "venue": "Los Angeles (Inglewood)"
   },
   {
