@@ -966,5 +966,15 @@
     "awayGoals": 0,
     "homePens": 4,
     "awayPens": 3
+  },
+  {
+    "id": "97",
+    "date": "2026-07-09",
+    "stage": "quarter",
+    "group": null,
+    "home": "France",
+    "away": "Morocco",
+    "homeGoals": 2,
+    "awayGoals": 0
   }
 ]
