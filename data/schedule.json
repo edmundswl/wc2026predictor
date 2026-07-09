@@ -1280,10 +1280,10 @@
     "time": "17:00 UTC-4",
     "stage": "quarter",
     "group": null,
-    "home": "W91",
-    "away": "W92",
-    "homeTbd": true,
-    "awayTbd": true,
+    "home": "Norway",
+    "away": "England",
+    "homeTbd": false,
+    "awayTbd": false,
     "venue": "Miami (Miami Gardens)"
   },
   {
@@ -1293,10 +1293,10 @@
     "time": "20:00 UTC-5",
     "stage": "quarter",
     "group": null,
-    "home": "W95",
-    "away": "W96",
-    "homeTbd": true,
-    "awayTbd": true,
+    "home": "Argentina",
+    "away": "Switzerland",
+    "homeTbd": false,
+    "awayTbd": false,
     "venue": "Kansas City"
   },
   {
