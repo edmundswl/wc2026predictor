@@ -976,5 +976,15 @@
     "away": "Morocco",
     "homeGoals": 2,
     "awayGoals": 0
+  },
+  {
+    "id": "98",
+    "date": "2026-07-10",
+    "stage": "quarter",
+    "group": null,
+    "home": "Spain",
+    "away": "Belgium",
+    "homeGoals": 2,
+    "awayGoals": 1
   }
 ]
