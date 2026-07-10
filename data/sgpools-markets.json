@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-09T03:53:06.315Z",
+  "generatedAt": "2026-07-10T03:54:24.416Z",
   "sourceUrl": "https://online.singaporepools.com/en/sports",
   "competitionUrl": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
   "mode": "availability_only",
-  "status": "availability_snapshot",
-  "note": "Singapore Pools public pages exposed World Cup event listings. Live prices are intentionally not fetched.",
+  "status": "checked_no_public_events",
+  "note": "Singapore Pools public pages were checked, but no World Cup event listings were exposed.",
   "betTypes": [
     {
       "code": "WH",
@@ -67,19 +67,7 @@
       "name": "Will Both Teams Score"
     }
   ],
-  "events": [
-    {
-      "competition": "W Cup",
-      "home": "Argentina",
-      "away": "Egypt",
-      "kickoff": null,
-      "status": "public-listing",
-      "source": "sports",
-      "sourceUrl": "https://online.singaporepools.com/en/sports",
-      "eventId": "140300",
-      "markets": []
-    }
-  ],
+  "events": [],
   "checkedPages": [
     {
       "label": "sports",
@@ -87,7 +75,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 117535,
+      "bytes": 117358,
       "error": null
     },
     {
@@ -96,7 +84,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 109594,
+      "bytes": 109419,
       "error": null
     },
     {
@@ -105,7 +93,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 107283,
+      "bytes": 107108,
       "error": null
     }
   ]
