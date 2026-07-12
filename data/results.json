@@ -996,5 +996,15 @@
     "away": "England",
     "homeGoals": 1,
     "awayGoals": 2
+  },
+  {
+    "id": "100",
+    "date": "2026-07-11",
+    "stage": "quarter",
+    "group": null,
+    "home": "Argentina",
+    "away": "Switzerland",
+    "homeGoals": 3,
+    "awayGoals": 1
   }
 ]
