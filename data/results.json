@@ -986,5 +986,15 @@
     "away": "Belgium",
     "homeGoals": 2,
     "awayGoals": 1
+  },
+  {
+    "id": "99",
+    "date": "2026-07-11",
+    "stage": "quarter",
+    "group": null,
+    "home": "Norway",
+    "away": "England",
+    "homeGoals": 1,
+    "awayGoals": 2
   }
 ]

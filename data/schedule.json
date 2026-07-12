@@ -1306,10 +1306,10 @@
     "time": "14:00 UTC-5",
     "stage": "semi",
     "group": null,
-    "home": "W97",
-    "away": "W98",
-    "homeTbd": true,
-    "awayTbd": true,
+    "home": "France",
+    "away": "Spain",
+    "homeTbd": false,
+    "awayTbd": false,
     "venue": "Dallas (Arlington)"
   },
   {
