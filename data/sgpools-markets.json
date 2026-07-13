@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-12T03:32:32.033Z",
+  "generatedAt": "2026-07-13T03:35:06.370Z",
   "sourceUrl": "https://online.singaporepools.com/en/sports",
   "competitionUrl": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
   "mode": "availability_only",
-  "status": "checked_no_public_events",
-  "note": "Singapore Pools public pages were checked, but no World Cup event listings were exposed.",
+  "status": "availability_snapshot",
+  "note": "Singapore Pools public pages exposed World Cup event listings. Live prices are intentionally not fetched.",
   "betTypes": [
     {
       "code": "WH",
@@ -67,7 +67,19 @@
       "name": "Will Both Teams Score"
     }
   ],
-  "events": [],
+  "events": [
+    {
+      "competition": "W Cup",
+      "home": "France",
+      "away": "Morocco",
+      "kickoff": null,
+      "status": "public-listing",
+      "source": "w-cup",
+      "sourceUrl": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
+      "eventId": "140306",
+      "markets": []
+    }
+  ],
   "checkedPages": [
     {
       "label": "sports",
@@ -75,7 +87,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 117815,
+      "bytes": 116905,
       "error": null
     },
     {
@@ -84,7 +96,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 109874,
+      "bytes": 109160,
       "error": null
     },
     {
@@ -93,7 +105,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 107563,
+      "bytes": 106653,
       "error": null
     }
   ]
