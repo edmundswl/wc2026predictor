@@ -1319,10 +1319,10 @@
     "time": "15:00 UTC-4",
     "stage": "semi",
     "group": null,
-    "home": "W99",
-    "away": "W100",
-    "homeTbd": true,
-    "awayTbd": true,
+    "home": "England",
+    "away": "Argentina",
+    "homeTbd": false,
+    "awayTbd": false,
     "venue": "Atlanta"
   },
   {
