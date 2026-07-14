@@ -1006,5 +1006,15 @@
     "away": "Switzerland",
     "homeGoals": 3,
     "awayGoals": 1
+  },
+  {
+    "id": "101",
+    "date": "2026-07-14",
+    "stage": "semi",
+    "group": null,
+    "home": "France",
+    "away": "Spain",
+    "homeGoals": 0,
+    "awayGoals": 2
   }
 ]
