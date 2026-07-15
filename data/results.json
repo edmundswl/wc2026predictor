@@ -1016,5 +1016,15 @@
     "away": "Spain",
     "homeGoals": 0,
     "awayGoals": 2
+  },
+  {
+    "id": "102",
+    "date": "2026-07-15",
+    "stage": "semi",
+    "group": null,
+    "home": "England",
+    "away": "Argentina",
+    "homeGoals": 1,
+    "awayGoals": 2
   }
 ]
