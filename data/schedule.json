@@ -1332,10 +1332,10 @@
     "time": "17:00 UTC-4",
     "stage": "third",
     "group": null,
-    "home": "L101",
-    "away": "L102",
-    "homeTbd": true,
-    "awayTbd": true,
+    "home": "France",
+    "away": "England",
+    "homeTbd": false,
+    "awayTbd": false,
     "venue": "Miami (Miami Gardens)"
   },
   {
