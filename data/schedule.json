@@ -1345,10 +1345,10 @@
     "time": "15:00 UTC-4",
     "stage": "final",
     "group": null,
-    "home": "W101",
-    "away": "W102",
-    "homeTbd": true,
-    "awayTbd": true,
+    "home": "Spain",
+    "away": "Argentina",
+    "homeTbd": false,
+    "awayTbd": false,
     "venue": "New York/New Jersey (East Rutherford)"
   }
 ]
