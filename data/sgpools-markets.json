@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-22T03:20:42.922Z",
+  "generatedAt": "2026-07-23T03:27:42.598Z",
   "sourceUrl": "https://online.singaporepools.com/en/sports",
   "competitionUrl": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
   "mode": "availability_only",
@@ -20,7 +20,7 @@
     },
     {
       "code": "AH",
-      "name": "Asian Handicap/HT Asian Handicap"
+      "name": "Asian Handicap"
     },
     {
       "code": "H1",
@@ -75,7 +75,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 120171,
+      "bytes": 119476,
       "error": null
     },
     {
@@ -84,7 +84,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 120171,
+      "bytes": 119476,
       "error": null
     },
     {
@@ -93,7 +93,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 109840,
+      "bytes": 109164,
       "error": null
     }
   ]
