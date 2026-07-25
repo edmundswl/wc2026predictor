@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-24T03:21:34.843Z",
+  "generatedAt": "2026-07-25T03:20:08.453Z",
   "sourceUrl": "https://online.singaporepools.com/en/sports",
   "competitionUrl": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
   "mode": "availability_only",
@@ -69,14 +69,14 @@
   ],
   "events": [
     {
-      "competition": "UE Europe",
-      "home": "Hajduk",
-      "away": "Pafos",
+      "competition": "AFF Championship",
+      "home": "Cambodia",
+      "away": "Singapore",
       "kickoff": null,
       "status": "public-listing",
       "source": "w-cup",
       "sourceUrl": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
-      "eventId": "140591",
+      "eventId": "140669",
       "markets": []
     }
   ],
@@ -87,7 +87,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 120063,
+      "bytes": 123560,
       "error": null
     },
     {
@@ -96,7 +96,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 120051,
+      "bytes": 123617,
       "error": null
     },
     {
@@ -105,7 +105,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 109751,
+      "bytes": 113532,
       "error": null
     }
   ]
