@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-25T03:20:08.453Z",
+  "generatedAt": "2026-07-26T03:34:02.101Z",
   "sourceUrl": "https://online.singaporepools.com/en/sports",
   "competitionUrl": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
   "mode": "availability_only",
-  "status": "availability_snapshot",
-  "note": "Singapore Pools public pages exposed World Cup event listings. Live prices are intentionally not fetched.",
+  "status": "checked_no_public_events",
+  "note": "Singapore Pools public pages were checked, but no World Cup event listings were exposed.",
   "betTypes": [
     {
       "code": "WH",
@@ -67,19 +67,7 @@
       "name": "Will Both Teams Score"
     }
   ],
-  "events": [
-    {
-      "competition": "AFF Championship",
-      "home": "Cambodia",
-      "away": "Singapore",
-      "kickoff": null,
-      "status": "public-listing",
-      "source": "w-cup",
-      "sourceUrl": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
-      "eventId": "140669",
-      "markets": []
-    }
-  ],
+  "events": [],
   "checkedPages": [
     {
       "label": "sports",
@@ -87,7 +75,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 123560,
+      "bytes": 122044,
       "error": null
     },
     {
@@ -96,7 +84,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 123617,
+      "bytes": 122044,
       "error": null
     },
     {
@@ -105,7 +93,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 113532,
+      "bytes": 111788,
       "error": null
     }
   ]
