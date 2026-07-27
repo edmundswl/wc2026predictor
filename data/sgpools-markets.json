@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-26T03:34:02.101Z",
+  "generatedAt": "2026-07-27T03:41:44.289Z",
   "sourceUrl": "https://online.singaporepools.com/en/sports",
   "competitionUrl": "https://online.singaporepools.com/en/sports/competition/171/football/world/w-cup",
   "mode": "availability_only",
@@ -75,7 +75,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 122044,
+      "bytes": 118208,
       "error": null
     },
     {
@@ -84,7 +84,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 122044,
+      "bytes": 118208,
       "error": null
     },
     {
@@ -93,7 +93,7 @@
       "ok": true,
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
-      "bytes": 111788,
+      "bytes": 108064,
       "error": null
     }
   ]
